@@ -7,7 +7,7 @@ import os
 # Modelos internos
 import models.user as user
 
-mongodb_key = os.getenv("MONGODB_KEY", 'mongodb://localhost:27017')
+mongodb_key = "mongodb+srv://a01026502:hSnywGkyBL2Zo7LX@cluster0.xpwffji.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 client = pymongo.MongoClient(mongodb_key) 
 db = client["Escuela"] 
 collection = db["alumno"] 
